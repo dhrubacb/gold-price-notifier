@@ -5,51 +5,10 @@ Overview
 The Gold Price Monitor is a lightweight Python script that monitors gold prices using the official goldprice.org API endpoint and sends you macOS desktop notifications whenever the gold price changes by more than 2 RM/gram.
 
 The notifications display the price in the format: "NOW vs THEN (in RM/GRAM)"
+## Disclaimer
+This script fetches publicly available gold price data from goldprice.org.
+Please respect their Terms of Service and rate limits.
 
-Why This Version is Better
-
-✅ Lightweight - Uses direct API instead of HTML parsing
-✅ Fast - Minimal network overhead, quick responses
-✅ Reliable - No JavaScript rendering needed
-✅ Efficient - Very low CPU and memory usage
-✅ No dependencies - Only uses requests library (pre-installed on most Macs)
-
-Features
-
-•
-✅ Monitors gold prices in Malaysian Ringgit (RM) per gram
-
-•
-✅ Sends native macOS notifications when price changes exceed 2 RM/gram
-
-•
-✅ Runs in the background without requiring a browser
-
-•
-✅ Checks price every 5 minutes (configurable)
-
-•
-✅ Keeps track of price history in a local file
-
-•
-✅ Can be set to launch automatically at startup
-
-•
-✅ Uses the official goldprice.org API: https://data-asg.goldprice.org/dbXRates/MYR
-
-Requirements
-
-•
-macOS (Monterey or later recommended )
-
-•
-Python 3.7 or higher
-
-•
-Internet connection
-
-•
-requests library (usually pre-installed)
 
 Installation
 
@@ -563,6 +522,8 @@ Price history is stored locally and persists between script runs
 The API endpoint is lightweight and uses minimal bandwidth
 
 API Information
+# This uses the public goldprice.org API endpoint
+# No authentication required - data is publicly available
 
 Endpoint: https://data-asg.goldprice.org/dbXRates/MYR
 
